@@ -1,0 +1,12 @@
+Question 1
+Find the output of the following code snippet: 
+int i =0, j = 0;
+int *p = &i, *q = &j;
+q = p;
+*q = 2
+cout<<i<<" "<<j;
+
+Answer:
+2    0    
+As p stores the address of i and q stores the address of j, and in the line "q=p" the address of i which is stored in p is now stored in q, 
+and the next line "*q=2" means the value at address q which is i which is 0 is now 2 and when we print the value of i is 2 and j remains the same
